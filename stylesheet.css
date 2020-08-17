@@ -1,0 +1,221 @@
+/**/
+
+* {
+    padding: 0;
+    margin: 0;
+    list-style: none;
+    box-sizing: border-box;
+    text-decoration: none;
+}
+.main {
+    height: 100vh;
+    width: 100%;
+}
+.head {
+    height: 40px;
+    width: 100%;
+    background: rgba(0, 0, 0, .2);
+}
+.head ul {
+    float: right;
+    margin-right: 50px;
+}
+.head ul li {
+    display: inline-block;
+    line-height: 40px;
+    margin: 0 20px;
+}
+nav {
+    background: rgba(0, 0, 0, .5);
+    height: 60px;
+    width: 100%;
+}
+label.logo a {
+    color: white;
+    font-size: 30px;
+    line-height: 60px;
+    padding: 0 50px;
+    font-weight: bold;
+}
+nav ul {
+    float: right;
+    margin-right: 10px;
+}
+nav ul li {
+    display: inline-block;
+    line-height: 60px;
+    margin: 0 5px;
+}
+nav ul li a {
+    color: white;
+    font-size: 20px;
+    padding: 8px 15px;
+    border-radius: 5px;
+    text-transform: uppercase;
+}
+.lnk.active,
+.lnk:hover {
+    background: #1b9bff;
+    transition: 0.5s;
+}
+.checkbtn {
+    font-size: 35px;
+    color: white;
+    float: right;
+    margin: 12px 40px;
+    cursor: pointer;
+    display: none;
+}
+#check {
+    display: none;
+}
+.slidebar {
+    width: 100%;
+    height: 250px;
+    background: pink;
+}
+.content {
+    width: 100%;
+    height: 450px;
+    background: yellow;
+}
+.leftc {
+    width: 20%;
+    height: 100%;
+    background: green;
+    float: left;
+}
+.middlec {
+    width: 60%;
+    height: 100%;
+    background: white;
+    float: left;
+}
+.rightc {
+    width: 20%;
+    height: 100%;
+    background: green;
+    float: right;
+}
+.footer {
+    width: 100%;
+    height: 50px;
+    background: black;
+}
+@media(min-width:1200px) {
+    /*Extra large Device*/
+}
+@media(min-width:992px) and (max-width:1199px) {
+    /*large Device*/
+}
+@media(min-width:768px) and (max-width:991px) {
+    /*Medium Device*/
+}
+@media(min-width:576px) and (max-width:767px) {
+    /* Small Device*/
+    .head {
+        height: 40px;
+        width: 100%;
+        background: rgba(0, 0, 0, .2);
+    }
+    .head ul {
+        float: right;
+        margin-right: 40px;
+    }
+    .head ul li {
+        display: inline-block;
+        line-height: 40px;
+        margin: 0 20px;
+    }
+    label.logo {
+        color: white;
+        font-size: 20px;
+        line-height: 60px;
+        padding: 0 10px;
+        font-weight: bold;
+    }
+    .checkbtn {
+        display: block;
+    }
+    #box-menu {
+        position: fixed;
+        width: 100%;
+        height: 100vh;
+        background: #2c3e50;
+        /*you can change top property*/
+        top: 100px;
+        left: -100%;
+        text-align: center;
+        transition: all .5s;
+    }
+    nav ul li {
+        display: block;
+        margin: 50px 0;
+        line-height: 30px;
+    }
+    nav ul li a {
+        font-size: 25px;
+    }
+    .lnk:hover,
+    .lnk.active {
+        background: none;
+        color: #0082e6;
+    }
+    #check:checked ~ ul {
+        left: 0;
+    }
+}
+@media(max-width:575px) {
+    /*Extra Small Device*/
+    .head {
+        height: 40px;
+        width: 100%;
+        background: rgba(0, 0, 0, .2);
+    }
+    .head ul {
+        float: right;
+        margin-right: 10px;
+    }
+    .head ul li {
+        display: inline-block;
+        line-height: 40px;
+        margin: 0 10px;
+    }
+    label.logo a {
+        color: white;
+        font-size: 20px;
+        line-height: 60px;
+        padding: 0 20px;
+        font-weight: bold;
+    }
+    .checkbtn {
+        display: block;
+    }
+    #box-menu {
+        position: fixed;
+        width: 100%;
+        height: 100vh;
+        background: #2c3e50;
+        /*you can change top property*/
+        top: 100px;
+        left: -100%;
+        text-align: center;
+        transition: all .5s;
+    }
+    nav ul li {
+        display: block;
+        margin: 50px 0;
+        line-height: 30px;
+    }
+    nav ul li a {
+        font-size: 25px;
+    }
+    .lnk:hover,
+    .lnk.active {
+        background: none;
+        color: #0082e6;
+    }
+    #check:checked ~ ul {
+        left: 0;
+    }
+}
